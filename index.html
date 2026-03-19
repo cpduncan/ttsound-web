@@ -1,27 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
+
   <head>
-    <meta charset="utf-8" />
-    <title>ttsound web (barebones)</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        font-family: system-ui, sans-serif;
-        padding: 1rem;
-      }
-    </style>
-    <link rel="icon" type="image/svg+xml" href="./src/assets/icon.svg" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ttsound-web</title>
   </head>
+
   <body>
-    <h1>ttsound-web</h1>
-
-    <input id="file" type="file" accept="audio/*" multiple />
-    <button id="play">Play</button>
-    <button id="stop">Stop</button>
-    <button id="export">Export WAV</button>
-
-    <div id="tracks"></div>
-
-    <script type="module" src="./src/ui/index.ts"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
   </body>
+
 </html>
