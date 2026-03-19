@@ -6,7 +6,7 @@
   --border: #b3b3b3;
   --accent: #1db954;
   --accent-bg: #212121;
-  --middle-bg: #171717;
+  --middle-bg: #191919;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -75,10 +75,13 @@ p {
   display: flex;
   flex: 1;
   height: 100%;
+
+  gap: 16px;
+  padding: 16px;
+
 }
 
 .flex-item {
-  display: flex;
   background: var(--middle-bg);
   flex-direction: column;
   padding: 10px;
@@ -87,6 +90,7 @@ p {
 }
 
 .flex-item:nth-child(1) {
+  display: flex;
   flex: 0 0 20%;
   overflow-y: auto;
   border-radius: 6px;
@@ -98,6 +102,7 @@ p {
 }
 
 .flex-item:nth-child(3) {
+  display: flex;
   flex: 0 0 20%;
   overflow-y: auto;
   border-radius: 6px;
@@ -118,5 +123,3 @@ p {
 .flex-item button:hover {
   background: var(--fg);
 }
-
-
